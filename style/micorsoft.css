@@ -1,0 +1,73 @@
+.microsoft-page{
+    height: 100vh;
+}
+.header{
+    margin: 16px 132px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+
+}
+.logo img{
+    height: 22px;
+}
+.logo .menu{
+
+}
+.logo .menu a{
+ text-decoration: none;
+ color: black;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.navigation p{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+.navigation p img{
+    width: 20px;
+    height: 20px;
+}
+.offer-section{
+    background-color: #0067b8;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.offer-section a{
+    color: white;
+    font-size: 20px;
+}
+.landing-section{
+background-image: url(/microsoft/assets/images/Highlight-Hero-Surface-Family-Platinum-Windows-11\ VP1-539x440.avif);
+background-color: #f2f2f2;
+background-repeat: no-repeat;
+background-size: 900px;
+height: 600px;
+}
+.landing-section .right-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 300px;
+    left: 1400px;
+    width: 300px;
+}
+
