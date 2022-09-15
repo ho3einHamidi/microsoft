@@ -21,7 +21,9 @@
     height: 22px;
 }
 .logo .menu{
-
+display: flex;
+flex-direction: row;
+gap: 12px;  
 }
 .logo .menu a{
  text-decoration: none;
@@ -42,7 +44,7 @@ align-items: center;
     width: 20px;
     height: 20px;
 }
-.offer-section{
+.offers-section{
     background-color: #0067b8;
     height: 54px;
     display: flex;
@@ -50,12 +52,12 @@ align-items: center;
     justify-content: center;
     align-items: center;
 }
-.offer-section a{
+.offers-section a{
     color: white;
     font-size: 20px;
 }
 .landing-section{
-background-image: url(/microsoft/assets/images/Highlight-Hero-Surface-Family-Platinum-Windows-11\ VP1-539x440.avif);
+background-image: url(/assets/images/Highlight-Hero-Surface-Family-Platinum-Windows-11\ VP1-539x440.avif);
 background-color: #f2f2f2;
 background-repeat: no-repeat;
 background-size: 900px;
@@ -67,7 +69,24 @@ height: 600px;
     justify-content: center;
     position: absolute;
     top: 300px;
-    left: 1400px;
+    left: 900px;
     width: 300px;
 }
-
+.shop-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 128px;
+    margin-top: 64px;
+}
+.shop-container .shop-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.shop-container .shop-item a{
+color: #0067b8;
+}
