@@ -1,214 +1,225 @@
-.microsoft-page{
-    height: 100vh;
-    text-transform: capitalize;
-    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+.microsoft-page {
+  height: 100vh;
+  text-transform: capitalize;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
 }
-.header{
-    margin: 16px 144px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 13px;
-    text-transform: capitalize;
+.main-header {
+  padding: 16px 144px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  text-transform: capitalize;
+  /* this lines for fixed and sticky position guide */
+  /* position: sticky;
+  top:0; */
+  background-color: white;
+  height: 70px;
+  width: 100%;
 }
-.logo{
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-    align-items: center;
-
+.left-navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  height: 100%;
+  align-items: center;
 }
-.logo img{
-    height: 22px;
+.left-navbar img {
+  height: 22px;
 }
-.logo .menu{
-display: flex;
-flex-direction: row;
-gap: 12px; 
+.left-navbar .menu {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
 }
-.logo .menu a{
- text-decoration: none;
- color: black;
+.left-navbar .menu a {
+  text-decoration: none;
+  color: black;
 }
-.navigation{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+.navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  height: 100%;
 }
-.navigation p{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+.navigation p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0 4px;
+  cursor: pointer;
 }
-.navigation p img{
-    width: 20px;
-    height: 20px;
+.navigation p img {
+  width: 20px;
+  height: 20px;
 }
-.offers-section{
-    background-color: #0067b8;
-    height: 54px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.offers-section {
+  background-color: #0067b8;
+  height: 54px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.offers-section a{
-    color: white;
-    font-size: 20px;
+.offers-section a {
+  color: white;
+  font-size: 20px;
 }
-.landing-section{
-background-image: url(/assets/images/Highlight-Hero-Surface-Family-Platinum-Windows-11\ VP1-539x440.avif);
-background-color: #f2f2f2;
-background-repeat: no-repeat;
-background-size: 900px;
-height: 600px;
+.landing-section {
+  background-color: #f2f2f2;
+  height: 475px;
+  position: relative;
+  z-index: -500;
 }
-.landing-section .right-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+.landing-section img{
     position: absolute;
-    top: 300px;
-    left: 900px;
-    width: 300px;
+    left: 200px;
 }
-.shop-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0 256px;
-    margin-top: 64px;
+.landing-section .landing-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 50%;
+  right: 500px;
+  width: 300px;
+  transform: translateY(-50%);
 }
-.shop-container .shop-item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
+.shop-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 256px;
+  margin-top: 64px;
 }
-.shop-container .shop-item a{
-color: #0067b8;
-font-weight: bold;
+.shop-container .shop-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
-.items-detail-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* align-items: center; */
-    gap: 30px;
-    margin: 100px 95px;
-    /* //change: set min height to be the height of the longest child height */
-    min-height:500px;
+.shop-container .shop-item a {
+  color: #0067b8;
+  font-weight: bold;
 }
-.items-detail-section .item{
-    width: 382px;
-    /* //change: set item height to 100% of its parent */
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.items-detail-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 30px;
+  margin: 100px 95px;
 }
-.items-detail-section .title{
-    font-size: 30px;
-    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+.items-detail-section .item {
+  width: 382px;
+  /* //change: set item height to 100% of its parent */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* //change: set min height to be the height of the longest child height */
+  /* min-height: 500px; */
 }
-.items-detail-section img{
-    height: 214px;
-    width: 382px;
+.items-detail-section .title {
+  font-size: 30px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
 }
-.items-detail-section p{
-    line-height: 1.6;
+.items-detail-section img {
+  height: 214px;
+  width: 382px;
+}
+.items-detail-section p {
+  line-height: 1.6;
+}
 
+.games-section {
+  border: red 2px solid;
+  /* width: 500px; */
+  height: 500px;
+  margin: 50px;
 }
-
-.games-section{
-    border: red 2px solid;
-    /* width: 500px; */
-    height: 500px;
-    margin: 50px;
-
+.business-header {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 30px 130px;
 }
-.business-header{
-font-size: 32px;
-font-weight: 600;
-margin: 30px 130px;
+.business-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 30px 95px;
 }
-.business-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 30px 95px;
+.business-section .item {
+  width: 382px;
+  /* //change: set item height to 100% of its parent */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
-.business-section .item{
-    width: 382px;
-    /* //change: set item height to 100% of its parent */
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.business-section .item a {
+  color: #0067b8;
 }
-.business-section .item a{
-    color: #0067b8;
+.business-section .item .title {
+  font-size: 25px;
+  font-weight: 600;
 }
-.business-section .item .title{
-    font-size: 25px;
-    font-weight: 600;
+.business-section .item p {
+  line-height: 1.6;
 }
-.business-section .item p{
-    line-height: 1.6;
-}
-.business-section .item .links{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
+.business-section .item .links {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 /* //problem: vote-landing */
-.vote-landing{
-    display: flex;
-    flex-direction: row;
-    background-color: #000049;
-    margin: 0px 120px;
+.vote-landing {
+  display: flex;
+  flex-direction: row;
+  background-color: #000049;
+  margin: 0px 120px;
 }
-.vote-landing img{
-    padding: 130px;
+.vote-landing img {
+  padding: 130px;
 }
-.vote-landing .details{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
-    padding: 120px;
-    color: white;
-
+.vote-landing .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  padding: 120px;
+  color: white;
 }
-.social-media{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    margin: 120px;
-    gap: 15px;
-
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin: 120px;
+  gap: 15px;
 }
-.social-media img{
-    width: 32px;
-    height: 32px;
+.social-media img {
+  width: 32px;
+  height: 32px;
 }
-.footer{
-    background-color: #f2f2f2;
+.footer {
+  background-color: #f2f2f2;
 }
-.footer .access-container .new{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.footer .access-container .new {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.access-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.access-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
